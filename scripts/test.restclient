@@ -1,5 +1,5 @@
 :HOST=http://localhost:8080
-GET :HOST/api/users
+GET :HOST/api/users?search=&page=1&limit=1
 ###
 POST :HOST/api/users
 content-type: application/json
@@ -16,3 +16,5 @@ content-type: application/json
 }
 ###
 DELETE :HOST/api/users/2
+###
+GET :HOST/api/userspecific?search=
