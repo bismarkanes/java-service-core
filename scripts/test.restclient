@@ -1,0 +1,18 @@
+:HOST=http://localhost:8080
+GET :HOST/api/users
+###
+POST :HOST/api/users
+content-type: application/json
+
+{
+  "name": "Martin"
+}
+###
+PATCH :HOST/api/users/3
+content-type: application/json
+
+{
+  "name": "Martin Saja"
+}
+###
+DELETE :HOST/api/users/2
