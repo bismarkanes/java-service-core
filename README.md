@@ -69,6 +69,15 @@ $ ./mvnw spring-boot:run
 $ make run
 ```
 
+### Run Test
+Make sure you have set the environment variables.
+
+```console
+$ mvn test
+or
+$ make test
+```
+
 ## Project Structure
 ```console
 ├── Makefile
@@ -104,9 +113,12 @@ $ make run
 │       └── java
 │           └── com
 │               └── service
-│                   └── core
-│                       └── CoreApplicationTests.java
-
+│                   ├── core
+│                   │   └── CoreApplicationTests.java
+│                   ├── http
+│                   │   └── TestHttp.java
+│                   └── utils
+│                       └── TestUtils.java
 ```
 
 ## References
